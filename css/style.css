@@ -1,0 +1,556 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+}
+/* WebColors */
+.pC1 {
+    color: rgba(141, 198, 63, 1);
+}
+.pC2 {
+    color: rgba(13, 109, 183, 1);
+}
+.pC3 {
+    color: red;
+}
+.pBg1 {
+    background-color: rgba(141, 198, 63, 1);
+}
+.pBg2 {
+    background-color: rgba(13, 109, 183, 1);
+}
+/* Font Sizes */
+.font-size1 {
+    font-size: 1em;
+}
+.font-size12 {
+    font-size: 1.2em;
+}
+.font-size15 {
+    font-size: 1.5em;
+}
+.font-size2 {
+    font-size: 2em;
+}
+.font-size25 {
+    font-size: 2.5em;
+}
+.font-size3 {
+    font-size: 3em;
+}
+.font-size4 {
+    font-size: 4em;
+}
+/* Margin */
+.margin10 {
+    margin: 50px auto;
+}
+/* Font Sizes End */
+.container {
+    width: 75%;
+    margin: 50px auto;
+}
+/* TopBar CSS */
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba (238, 238, 238, 1);
+    font-weight: bold;
+    margin: 20px auto 0px auto;
+}
+.innerContainer {
+    align-content: center;
+}
+.topBarLink {
+    display: flex;
+}
+.topBarLink a {
+    text-decoration: none;
+    color: #333;
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    align-content: center;
+}
+.flag a {
+    display: inline-block;
+}
+/* Header */
+header {
+    position: sticky;
+    top: -1px;
+    align-content: center;
+    background-color: #fff;
+    height: 80px;
+    z-index: 4;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    /* width: 75vw; */
+    margin: 0px auto;
+    align-content: center;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+header nav ul a {
+    color: #333;
+}
+header nav ul {
+    display: inline-block;
+}
+.navLinks {
+    align-content: center;
+}
+header img {
+    width: 200px;
+}
+.navBarHr {
+    position: sticky;
+    top: 79px;
+}
+.navButton, button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+}
+#donateNow {
+    background-color: rgba(13, 109, 183, 1);
+    border: solid 2px rgba(13, 109, 183, 1);
+}
+#Sponsor {
+    background-color: rgba(141, 198, 63, 1);
+    border: solid 2px rgba(13, 109, 183, 1);
+}
+.navLinks a:active {
+    color: rgba(13, 109, 183, 1);
+}
+/* Banner */
+.banner {
+    display: flex;
+    background-image: url(../img/carousal_background.d77d94e41c5a71ae581f.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner img {
+    width: 80%;
+}
+.bannerImg {
+    text-align: center;
+}
+.bannerText {
+    align-content: center;
+}
+.half-container {
+    width: 50%;
+}
+.bannerP {
+    width: 80%;
+    margin: 20px 0px;
+    text-align: justify;
+}
+.bannerButton {
+    color: #333;
+    background-color: #eee;
+    font-weight: normal;
+    text-decoration: none;
+    border: 1px solid #333;
+}
+@media screen and (max-width:1170px) {
+    .topBarLink {
+        a {
+            display: none;
+    }
+    }
+    .topBarLang {
+        select {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 750px) and (max-width:1000px) {
+    .bannerText h1 {
+        font-size: 2em;
+    }
+    .bannerText h2 {
+        font-size: 1.5em;
+    }
+    .bannerText p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:749px) {
+    .bannerImg {
+        display: none;
+    }
+    .bannerText {
+        width: 100%;
+    }
+}
+/* Donation Section */
+.donationBacground {
+    background-color: rgba(240, 252, 219, 1);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.donation {
+    background-color: #333;
+    width: 250px;
+    display: flex;
+    /* height: 40px; */
+    color: #fff;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0px 15px;
+    align-content: center;
+    box-sizing: border-box;
+}
+.donation input {
+    min-width: 100px;
+    width: 200px;
+    height: 35px;
+    margin: 0px 10px;
+}
+.donationTypes {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.donationType{
+    /* width: 100px; */
+    /* min-width: 150px; */
+    background-color: #fff;
+    padding: 5px 30px;
+    height: 40px;
+    align-content: center;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+.donationType:hover {
+    background-color: #333;
+    color: #fff;
+}
+.donationButton {
+    height: 40px;
+    font-weight: normal;
+    margin: 0px auto;
+}
+@media screen and (max-width:1300px)  {
+    .donationBacground {
+        display: block;
+    }
+    .donation input {
+        width: 90%;
+    }
+    .donation {
+        width: 100%;
+        text-align: center;
+    }
+    .donationTypes {
+        display: block
+    }
+    .donationType {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+}
+/* BigBanner */
+.adImage img{
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+}
+/* What we are doing? Section*/
+.Details {
+    text-align: center;
+}
+.textBg {
+    color: rgba(141, 198, 63, 0.3);
+}
+.sectionText {
+    color: rgba(13, 109, 183, 1);
+    position: relative;
+    bottom: 55px
+}
+.fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.field {
+    text-align: center;
+    background-color: rgba(240, 252, 219, 1);
+    width: 150px;
+    min-width:100px;
+    height: 150px;
+    border-radius: 10px;
+    align-content: center;
+    margin: 10px auto;
+}
+.field img {
+    padding: 10px 0px;
+    align-content: center;
+}
+    /* Donations */
+.askDonataion {
+    display: flex;
+    flex-wrap: wrap;
+}
+.donationImg {
+    width: 300px;
+    margin: 10px auto;
+    position: relative;
+    min-width: 250px;
+    /* overflow: hidden; */
+}
+.donationImg img {
+    width: 100%;
+    border-radius: 20px;
+}
+.donationImgText {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    position: absolute;
+    top: 0px;
+    /* overflow: hidden; */
+}
+.donationImgText button{
+    width: 80%;
+    bottom: 50px;
+    position: relative;
+    top: 70%;
+}
+.donationImgText h4 {
+    margin: 1% 10%;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    top: 70%;
+}
+.donationImg:hover {
+    opacity: 0.6;   
+}
+/*  */
+button:hover, .field:hover, .donationImg:hover, .projectIcon:hover {
+    scale: 1.1;
+}
+/* Projects */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project {
+    display: flex;
+    
+}
+.projectImg {
+    width: 40%;
+}
+.projectImg img {
+    width: 100%;
+}
+.projectIcon img{
+    background-color: #eee;
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 5px #333; */
+}
+.projectIcon {
+    margin: 10px;
+}
+.projectText {
+    width: 60%;
+    /* margin: 0px 10px; */
+}
+@media screen and (max-width: 1000px) {
+    .projectImg {
+        width: 100%;
+    }
+    .projectText {
+        width: 100%;
+    }
+}
+/* DataGraph */
+.dataGraph {
+    background: rgba(13, 109, 183, 1) url(../img/upcoming_background.a669f19ea2aee3c7e10f.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.data {
+    width: 200px;
+    min-width: 150px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+/* Message */
+.message {
+    background-color: #eee;
+    padding: 20px 30px;
+
+}
+.message img {
+    width: 100px;
+    border-radius: 100px;
+    margin: 30px auto 10px;
+}
+/* Media Updates */
+ .post {
+    width: 350px;
+    background-color: #ddd;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+ .post img {
+    width: 100%;
+ }
+ .postImg {
+    position: relative;
+ }
+ .post h4, .post p {
+    margin: 20px;
+    text-align: left;
+ }
+ .post p {
+    color: #555;
+ }
+ .postDate {
+    position: absolute;
+    top:20px;
+    box-sizing: border-box;
+    right: 0px;
+    background-color: rgba(13, 109, 183, 1);
+    color: #fff;
+ }
+ .postDate p {
+    margin: 0px;
+    color: #fff;
+    padding: 5px 10px;
+ }
+/* News */
+.news {
+    width: 350px;
+    /* max-width: 350px; */
+    background-color: rgba(220, 220, 220, 1);
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 200px;
+    margin: 10px auto;
+}
+.newsText {
+    padding: 10px;
+    text-align: left;
+    color: #111;
+}
+.newsText h4 {
+    margin: 10px;
+}
+.newsText button {
+    color: #111;
+    margin: 10px;
+}
+.news img {
+    width: 100%;
+}
+.newsDate {
+    width: 40%;
+    background-color: rgba(141, 198, 63, 1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+    font-size: 0.8em;
+    text-align: center ;
+}
+.newsHeadLine {
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+/* Syalni Guide */
+.sylaniGuideBackground {
+    background: rgba(13, 109, 183, 1) url(../img/guide_back.3a5127e910c15a49f875.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    height: 30vh;
+    text-align: center;
+    color: #fff;
+}
+.sylaniGuideBackground input {
+    width: 50%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 20px auto 0px;
+    background: transparent;
+    color: #fff;
+}
+.sylaniGuideBackground input::placeholder {
+    color: white;
+}
+#subscribe {
+    margin: 10px auto;
+    width: 50%;
+    color: black;
+    display: block;
+}
+/* Footer */
+footer {
+    background-image: url(../img/upcoming_background.a669f19ea2aee3c7e10f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Set the opacity to 0.1 */
+    /* background-blend-mode: difference; */
+}
+.footerMenus {
+    padding: 50px;
+}
+.LogoMedia {
+    text-align: center;
+    padding: 20px;
+}
+.LogoMedia i {
+    margin: 0px 10px;
+}
+.footerMenu ul {
+    list-style: none;
+}
+.copyRight {
+    text-align: center;
+    padding: 50px;
+}
